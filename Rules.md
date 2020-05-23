@@ -6,5 +6,5 @@ Who didn't play the game under teacher's nose while in class😂😂😂
 
 ohk! Here are the rules:
 
-Rule 1: You can choose from 0 to 6 only
+Rule 1: You can choose from 0 to 6 only<br>
 Rule 2: While bowling 2nd even if the computer beats you, the game wont stop unless you take computer's wicket.
