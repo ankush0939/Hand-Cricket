@@ -19,13 +19,45 @@ int main()
 		cin>>ch;
 		if (ch==1)
 		{
+            int runu,runc;
 			cout<<"You choose to bat first\n";
-			bat();
+			runu=bat();
+            cout<<"You Scored "<<runu<<" runs. All the best defending your score. Now the Pc bats\n";
+            runc=ball();
+            cout<<"You Scored "<<runu<<" and the Pc scored "<<runc<<endl;
+            if(runu==runc)
+            {
+                cout<<"Its a draw!! Better luck next time.\n";
+            }
+            else if(runu>runc)
+            {
+                cout<<"Hurray!!!!! You Won.\n";
+            }
+            else if (runu<runc)
+            {
+                cout<<"Alas!!!  Better luck next time.\n";
+            }
 		}
 		else if (ch==2)
 		{
+            int runu,runc;
 			cout<<"You choose to ball first\n";
-			ball();
+            runc=ball();
+            cout<<"You have to chase "<<runc<<" runs. Score "<<runc+1<<" to win.";           
+			runu=bat();
+            cout<<"You Scored "<<runu<<" and the Pc scored "<<runc<<endl;
+            if(runu==runc)
+            {
+                cout<<"Its a draw!! Better luck next time.";
+            }
+            else if(runu>runc)
+            {
+                cout<<"Hurray!!!!! You Won.";
+            }
+            else if (runu<runc)
+            {
+                cout<<"Alas!!!  Better luck next time.";
+            }
 		}
 	}
 	else
@@ -34,13 +66,45 @@ int main()
 		int kk=((rand()%2)+1);
 		if (kk==1)
 		{
+            int runu,runc;
 			cout<<"Pc choose to bat\n";
-			ball();
+			runc=ball();
+            cout<<"You have to chase "<<runc<<" runs. Score "<<runc+1<<" to win.";           
+			runu=bat();
+            cout<<"You Scored "<<runu<<" and the Pc scored "<<runc<<endl;
+            if(runu==runc)
+            {
+                cout<<"Its a draw!! Better luck next time.";
+            }
+            else if(runu>runc)
+            {
+                cout<<"Hurray!!!!! You Won.";
+            }
+            else if (runu<runc)
+            {
+                cout<<"Alas!!!  Better luck next time.";
+            }
 		}
 		else if (kk==2)
 		{
+            int runu,runc;
 			cout<<"Pc choose to ball\n";
-			bat();
+			runu=bat();
+            cout<<"You Scored "<<runu<<" runs. All the best defending your score. Now the Pc bats\n";
+            runc=ball();
+            cout<<"You Scored "<<runu<<" and the Pc scored "<<runc<<endl;
+            if(runu==runc)
+            {
+                cout<<"Its a draw!! Better luck next time.\n";
+            }
+            else if(runu>runc)
+            {
+                cout<<"Hurray!!!!! You Won.\n";
+            }
+            else if (runu<runc)
+            {
+                cout<<"Alas!!!  Better luck next time.\n";
+            }
 		}
 	}
     return 0;
@@ -52,8 +116,9 @@ int bat()
     while(out==0)
     {
         int cho,ccho=(rand()%7);
-        cout<<"Enter your choice: form 0 to 6\n";
+        cout<<"score: "<<runs<<" Enter your choice: form 0 to 6\n";
         cin>>cho;
+        cout<<"Computer choose: "<<ccho<<endl;     
         if(cho==ccho)
         {
             cout<<"You are Out\n";
@@ -73,8 +138,9 @@ int ball()
     while(out==0)
     {
         int cho,ccho=(rand()%7);
-        cout<<"Enter your choice: form 0 to 6\n";
+        cout<<"score: "<<runs<<" Enter your choice: form 0 to 6\n";
         cin>>cho;
+        cout<<"Computer choose: "<<ccho<<endl;
         if(cho==ccho)
         {
             cout<<"Thats Out\n";
