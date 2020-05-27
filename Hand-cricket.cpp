@@ -1,6 +1,4 @@
-#include<iostream>
-#include<cstdlib>
-
+#include<bits/stdc++.h>
 using namespace std;
 
 int bat();
@@ -9,7 +7,7 @@ int ball();
 
 int main()
 {
-	int t,cc,ch,r1,r2;
+	int t,cc,ch,r1,r2; 
 	cout<<"Enter your choice:\n 1: For Heads \n 2: For Tails\n";
 	cin>>t;
 	cc=((rand()%2)+1);
@@ -148,7 +146,7 @@ int ball()
         }
         else
         {
-            runs+=cho;
+            runs+=ccho;
         }
     }
     return runs;   
